@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             color: white;
             padding: 100px 0;
         }
+
         .feature-icon {
             font-size: 3rem;
             color: #3498db;
@@ -19,6 +21,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
@@ -35,7 +38,8 @@
     <section class="hero-section text-center">
         <div class="container">
             <h1 class="display-4 fw-bold mb-4">Gestão Inteligente de Insumos Hospitalares</h1>
-            <p class="lead mb-5">Um sistema simples, rápido e seguro para controlar a entrada, saída e validade de materiais no ambiente hospitalar.</p>
+            <p class="lead mb-5">Um sistema simples, rápido e seguro para controlar a entrada, saída e validade de
+                materiais no ambiente hospitalar.</p>
             <a href="login.php" class="btn btn-light btn-lg px-5 rounded-pill fw-bold text-primary shadow">
                 Acessar o Sistema <i class="bi bi-arrow-right ms-2"></i>
             </a>
@@ -50,7 +54,8 @@
                         <div class="card-body">
                             <i class="bi bi-box-seam feature-icon"></i>
                             <h4 class="card-title fw-bold">Controle Rigoroso</h4>
-                            <p class="card-text text-muted">Cadastre medicamentos, EPIs e materiais com alertas automáticos de estoque mínimo.</p>
+                            <p class="card-text text-muted">Cadastre medicamentos, EPIs e materiais com alertas
+                                automáticos de estoque mínimo.</p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +64,8 @@
                         <div class="card-body">
                             <i class="bi bi-arrow-left-right feature-icon"></i>
                             <h4 class="card-title fw-bold">Rastreabilidade</h4>
-                            <p class="card-text text-muted">Registre todas as entradas e saídas, sabendo exatamente quem movimentou o quê e quando.</p>
+                            <p class="card-text text-muted">Registre todas as entradas e saídas, sabendo exatamente quem
+                                movimentou o quê e quando.</p>
                         </div>
                     </div>
                 </div>
@@ -68,7 +74,8 @@
                         <div class="card-body">
                             <i class="bi bi-speedometer2 feature-icon"></i>
                             <h4 class="card-title fw-bold">Dashboard Intuitivo</h4>
-                            <p class="card-text text-muted">Acompanhe os dados críticos do seu estoque em tempo real através de uma interface clara.</p>
+                            <p class="card-text text-muted">Acompanhe os dados críticos do seu estoque em tempo real
+                                através de uma interface clara.</p>
                         </div>
                     </div>
                 </div>
@@ -84,4 +91,5 @@
     </footer>
 
 </body>
+
 </html>

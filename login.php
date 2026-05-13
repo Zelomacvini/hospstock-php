@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['usuario_id'] = $usuario['id'];
             $_SESSION['usuario_nome'] = $usuario['nome'];
             $_SESSION['nivel_acesso'] = $usuario['nivel_acesso'];
-            
+
             // Redireciona para o dashboard
             header("Location: pages/dashboard.php");
             exit;
@@ -38,33 +38,76 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Login - Estoque Hospitalar</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .login-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; text-align: center; }
-        input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
-        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background: #0056b3; }
-        .erro { color: red; margin-bottom: 10px; font-size: 14px; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .erro {
+            color: red;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
     </style>
 </head>
+
 <body>
 
-<div class="login-box">
-    <h2>Estoque Hospitalar</h2>
-    
-    <?php if ($erro): ?>
-        <div class="erro"><?php echo $erro; ?></div>
-    <?php endif; ?>
+    <div class="login-box">
+        <h2>Estoque Hospitalar</h2>
 
-    <form method="POST" action="">
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <input type="password" name="senha" placeholder="Sua senha" required>
-        <button type="submit">Entrar no Sistema</button>
-    </form>
-</div>
+        <?php if ($erro): ?>
+            <div class="erro"><?php echo $erro; ?></div>
+        <?php endif; ?>
+
+        <form method="POST" action="">
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="password" name="senha" placeholder="Sua senha" required>
+            <button type="submit">Entrar no Sistema</button>
+        </form>
+    </div>
 
 </body>
+
 </html>
